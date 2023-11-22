@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-6#h1(y^pg5+v&5e^n(b5!%e1dr$ss(haab&j8e07qn24$5=796
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -82,22 +82,19 @@ WSGI_APPLICATION = 'seniorcare.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
-##DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': 'test_code2',
-#        'USER':'root',
-#        'PASSWORD':'',
-#        'HOST':'localhost',
-#        'PORT':'3306',
-#        'OPTIONS': {
-#            'sql_mode': 'STRICT_ALL_TABLES',  # Enable Strict Mode
-#        },
-#    }
-#}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'test_code2',
+        'USER':'root',
+        'PASSWORD':'',
+        'HOST':'localhost',
+        'PORT':'3306',
+        'OPTIONS': {
+            'sql_mode': 'STRICT_ALL_TABLES',  # Enable Strict Mode
+        },
+    }
+}
 
 
 # Password validation
